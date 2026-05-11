@@ -34,13 +34,29 @@ website:
       - icon: mastodon 
         href: https://mastodon.social/@STEMcoding
       - icon: discord
-        href: https://discord.gg/bsWgqcqwCE        
+        href: https://discord.gg/bsWgqcqwCE
+  page-footer:
+    left: |
+      <div class="footer-left">
+        <p>The "STEMcoding project" is an initiative at <a href="http://osu.edu">Ohio State University</a> and the <a href="http://mountunion.edu">University of Mount Union</a> that collaborates with teachers and researchers across the US.</p>
+      </div>
+    right: |
+      <div class="footer-right">
+        <p class="footer-contact">For more information about STEMcoding Education Ohio, email <a href="mailto:stemcodingohio@gmail.com">stemcodingohio@gmail.com</a></p>
+        <p class="footer-copy">© <span id="copyright-year"></span> STEMcoding Project</p>
+        <script>document.getElementById('copyright-year').textContent = new Date().getFullYear();</script>
+      </div>
 
 format:
   html:
-    theme: cosmo
+    theme: flatly
     css: styles.css
     toc: true
+    include-in-header:
+      - text: |
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     sidebar:
       - id: main-sidebar
         contents:

@@ -1,6 +1,18 @@
 ---
 title: "Social Media Feed"
+toc: false
+sidebar: false
+page-layout: full
 ---
+
+<style>
+  /* Override grid layout for this page specifically */
+  .page-columns .page-full {
+    display: block !important;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+</style>
 
 
 

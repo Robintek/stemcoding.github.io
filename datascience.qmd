@@ -1,7 +1,18 @@
 ---
 title: "Data Science"
+toc: false
+sidebar: false
+page-layout: full
 ---
 
+<style>
+  /* Override grid layout for this page specifically */
+  .page-columns .page-full {
+    display: block !important;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+</style>
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
   <a href="http://go.osu.edu/datasciencetraining"><img src="/img/stemcoding_osu_DS_training_2026.png" width=385 ></a>

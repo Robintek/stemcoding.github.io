@@ -1,26 +1,157 @@
 ---
 title: "Meet the STEMcoding Team!"
+toc: false
+sidebar: false
+page-layout: full
 ---
 
-## Current Team
+<style>
+  /* Page layout */
+  .page-columns .page-full {
+    display: block !important;
+    max-width: 900px;
+    margin: 0 auto;
+  }
 
+  /* Section headings without anchors */
+  .section-heading {
+    font-family: var(--sc-font-display);
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: var(--sc-ink);
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.4rem;
+  }
 
-| |  |
-|----------|----------|
-| <img width=225 alt="Chris Orban" src="img/orban.jpeg"> | <img width=225 alt="Scott Zimmerman" src="img/zimmerman.jpeg">  |
-| **Chris Orban** Prof. of Physics at OSU Marion!| **Scott Zimmerman** Prof of Mathematics at OSU Marion|
-| <img width=250 alt="Jessica Kulp" src="img/kulp.jpeg">  | <img width=225 alt="Julie Butler" src="img/butler.png">   |  
-| **Jessica Kulp** Grad student OSU EHE | **Julie Butler** University of Mount Union| |
+  .section-heading::after {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 4px;
+    margin-top: 0.5rem;
+    border-radius: 2px;
+    background: var(--sc-grad-text);
+  }
 
+  .section-heading:first-of-type {
+    margin-top: 2rem;
+  }
 
-## Former Team Members
-* Kelsey Badger
-* Lilith Daemon
-* Nash Brecht
-* Brian Gainer
-* Joe Griffith
-* Victoria Hartmann
-* Jacob Moore
-* Chris Porter
-* Richelle Teeling-Smith
-* Demetrius Tuggle
+  /* Current team grid */
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .team-member {
+    text-align: center;
+    background: var(--sc-light);
+    border: 1px solid var(--sc-border);
+    border-radius: var(--sc-radius);
+    padding: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .team-member:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--sc-shadow);
+  }
+
+  .team-member img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 3px solid var(--sc-red);
+    display: block;
+  }
+
+  .team-member strong {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--sc-ink);
+    display: block;
+    margin: 0.5rem 0 0.1rem;
+    line-height: 1.3;
+  }
+
+  .team-member strong + * {
+    color: var(--sc-mute);
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  /* Former team list */
+  .former-team {
+    column-count: 2;
+    column-gap: 3rem;
+    margin-top: 1.5rem;
+  }
+
+  .former-team li {
+    margin-bottom: 0.5rem;
+    break-inside: avoid;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .team-grid {
+      grid-template-columns: 1fr;
+    }
+    .former-team {
+      column-count: 1;
+    }
+  }
+</style>
+
+<div class="section-heading">Current Team</div>
+
+::: {.team-grid}
+::: {.team-member}
+![](/img/orban.jpeg)
+
+**Chris Orban**
+Prof. of Physics at OSU Marion
+:::
+
+::: {.team-member}
+![](/img/zimmerman.jpeg)
+
+**Scott Zimmerman**
+Prof. of Mathematics at OSU Marion
+:::
+
+::: {.team-member}
+![](/img/kulp.jpeg)
+
+**Jessica Kulp**
+Grad student OSU EHE
+:::
+
+::: {.team-member}
+![](/img/butler.png)
+
+**Julie Butler**
+University of Mount Union
+:::
+:::
+
+<div class="section-heading">Former Team Members</div>
+
+<ul class="former-team">
+  <li>Kelsey Badger</li>
+  <li>Lilith Daemon</li>
+  <li>Nash Brecht</li>
+  <li>Brian Gainer</li>
+  <li>Joe Griffith</li>
+  <li>Victoria Hartmann</li>
+  <li>Jacob Moore</li>
+  <li>Chris Porter</li>
+  <li>Richelle Teeling-Smith</li>
+  <li>Demetrius Tuggle</li>
+</ul>
